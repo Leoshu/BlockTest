@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3D8C9101AD7A82100AC054D /* SecondViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D8C90F1AD7A82100AC054D /* SecondViewControllerTests.m */; };
 		B3EF552E1ACCDE7A0013E7A2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EF552D1ACCDE7A0013E7A2 /* main.m */; };
 		B3EF55311ACCDE7A0013E7A2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EF55301ACCDE7A0013E7A2 /* AppDelegate.m */; };
 		B3EF55341ACCDE7A0013E7A2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EF55331ACCDE7A0013E7A2 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		B3EF55391ACCDE7A0013E7A2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3EF55381ACCDE7A0013E7A2 /* Images.xcassets */; };
 		B3EF553C1ACCDE7A0013E7A2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3EF553A1ACCDE7A0013E7A2 /* LaunchScreen.xib */; };
 		B3EF55481ACCDE7A0013E7A2 /* TestBlockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EF55471ACCDE7A0013E7A2 /* TestBlockTests.m */; };
+		B3EF55531ACCE0090013E7A2 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EF55521ACCE0090013E7A2 /* SecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B3D8C90F1AD7A82100AC054D /* SecondViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewControllerTests.m; sourceTree = "<group>"; };
 		B3EF55281ACCDE7A0013E7A2 /* TestBlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestBlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EF552C1ACCDE7A0013E7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EF552D1ACCDE7A0013E7A2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,8 @@
 		B3EF55411ACCDE7A0013E7A2 /* TestBlockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBlockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3EF55461ACCDE7A0013E7A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3EF55471ACCDE7A0013E7A2 /* TestBlockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBlockTests.m; sourceTree = "<group>"; };
+		B3EF55511ACCE0090013E7A2 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		B3EF55521ACCE0090013E7A2 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +90,8 @@
 				B3EF55301ACCDE7A0013E7A2 /* AppDelegate.m */,
 				B3EF55321ACCDE7A0013E7A2 /* ViewController.h */,
 				B3EF55331ACCDE7A0013E7A2 /* ViewController.m */,
+				B3EF55511ACCE0090013E7A2 /* SecondViewController.h */,
+				B3EF55521ACCE0090013E7A2 /* SecondViewController.m */,
 				B3EF55351ACCDE7A0013E7A2 /* Main.storyboard */,
 				B3EF55381ACCDE7A0013E7A2 /* Images.xcassets */,
 				B3EF553A1ACCDE7A0013E7A2 /* LaunchScreen.xib */,
@@ -106,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				B3EF55471ACCDE7A0013E7A2 /* TestBlockTests.m */,
+				B3D8C90F1AD7A82100AC054D /* SecondViewControllerTests.m */,
 				B3EF55451ACCDE7A0013E7A2 /* Supporting Files */,
 			);
 			path = TestBlockTests;
@@ -222,6 +230,7 @@
 				B3EF55341ACCDE7A0013E7A2 /* ViewController.m in Sources */,
 				B3EF55311ACCDE7A0013E7A2 /* AppDelegate.m in Sources */,
 				B3EF552E1ACCDE7A0013E7A2 /* main.m in Sources */,
+				B3EF55531ACCE0090013E7A2 /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3D8C9101AD7A82100AC054D /* SecondViewControllerTests.m in Sources */,
 				B3EF55481ACCDE7A0013E7A2 /* TestBlockTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +365,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestBlock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +424,7 @@
 				B3EF554D1ACCDE7A0013E7A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B3EF554E1ACCDE7A0013E7A2 /* Build configuration list for PBXNativeTarget "TestBlockTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				B3EF55501ACCDE7A0013E7A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

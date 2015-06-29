@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void (^myCallBack)(NSString *result);
 
-@interface SecondVCViewController : UIViewController
+@protocol myDelegate <NSObject>
+- (void)didFinish:(NSString *)result;
+@end
+
+@interface SecondViewController : UIViewController
+
+@property (nonatomic, weak) id<myDelegate> delegate;
+@property (nonatomic, strong)myCallBack mMyCallBack;
+
+-(void)doSomething:(myCallBack)callBack;
 
 @end

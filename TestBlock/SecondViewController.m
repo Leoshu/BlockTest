@@ -6,32 +6,37 @@
 //  Copyright (c) 2015年 leotest. All rights reserved.
 //
 
-#import "SecondVCViewController.h"
+#import "SecondViewController.h"
 
-@interface SecondVCViewController ()
+@interface SecondViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label2;
 
 @end
 
-@implementation SecondVCViewController
+@implementation SecondViewController {
+    myCallBack singleCallBack;
+}
+
+@synthesize mMyCallBack;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.delegate didFinish:@"YA~YA~"];
+    mMyCallBack(@"Please wait.");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)doSomething:(myCallBack)callBack {
+    singleCallBack = callBack;
+    [NSThread detachNewThreadSelector:@selector(counting) toTarget:self withObject:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)counting {
+    for (int i = 0; i < 10000; i++) {
+        NSLog(@"%d", i);
+    }
+    if (singleCallBack) {
+        singleCallBack(@"I do it done!");
+    }
 }
-*/
 
 @end
